@@ -24,12 +24,12 @@ REBEL = bot.uid
 
 edit_time = 6
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/96c7031243c9bbaab31eb.jpg"
-file2 = "https://telegra.ph/file/97012cc8b32a2744c50b3.jpg"
-file3 = "https://telegra.ph/file/ba5bc78cdf6fbc65e1cce.jpg"
-file4 = "https://telegra.ph/file/4c1b9c5b5856109533635.jpg"
+file1 = "https://telegra.ph/file/5288e3a2cfd6a266ddf5a.jpg"
+file2 = "https://telegra.ph/file/2ebeb4cc0d1e397d5d982.jpg"
+file3 = "https://telegra.ph/file/04299b9368e72c039d99d.jpg"
+file4 = "https://telegra.ph/file/0b44d5ea0851371e2bbff.jpg"
 """ =======================CONSTANTS====================== """
-pm_caption = "  **🔥🔥ＴＨΛＮ♢Ｓ  ＩＳ ΛＬＩＶΣ🔥🔥**\n\n"
+pm_caption = "  **🔥🔥𝘿3𝙑𝙄𝙇 𝙋𝙍𝙄𝙔𝘼  ＩＳ ΛＬＩＶΣ🔥🔥**\n\n"
 
 pm_caption += f"**━━━━━━━━━━━━━━━━━━━━━━━━━━━**\n\n"
 pm_caption += (
@@ -39,10 +39,10 @@ pm_caption += f"╭ ──────┉─ • ─┉────── ╮\n"
 pm_caption += f"┊»--•-- `ＴΣＬΣＴＨ♢Ｎ:` `{version.__version__}` \n"
 pm_caption += f"┊»--•-- `ＶΣＲＳＩ♢Ｎ:` `{THANOSversion}`\n"
 pm_caption += f"┊»--•-- `ＳＵＤ♢:` `{sudou}`\n"
-pm_caption += f"┊»--•-- `ＲΣＰ♢:` [DEPLOY](https://github.com/thanosuser/ThanosBot)\n"
-pm_caption += f"┊»--•-- `ＴＨΛＮ♢Ｓ:` [OWNER](https://t.me/MAFIARISHABH)\n"
-pm_caption += f"┊»--•-- `ＣＨΛＮＮΞＬ:` [SUPPORT](https://t.me/thanos_userbots)\n"
-pm_caption += f"┊»--•-- `ＧＲ♢ＵＰ:` [THANOS CHAT](https://t.me/thanosbot_chats)\n"
+pm_caption += f"┊»--•-- `ＲΣＰ♢:` [DEPLOY](https://github.com/QUEENPRIYAOP/DEVILPRIYA)\n"
+pm_caption += f"┊»--•-- `ＴＨΛＮ♢Ｓ:` [OWNER](https://t.me/CUTIE_PRIYAOP1)\n"
+pm_caption += f"┊»--•-- `ＣＨΛＮＮΞＬ:` [SUPPORT](https://t.me/Bustedmind)\n"
+pm_caption += f"┊»--•-- `ＧＲ♢ＵＰ:` [GROUP](https://t.me/Bustedmindss)\n"
 pm_caption += f"╰ ──┉───¡! • !¡────┉── ╯\n"
 
 # @command(outgoing=True, pattern="^.alive$")
