@@ -83,7 +83,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running ThanosBot**[⚡🔥]({REBEL_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running 𝘿3𝙑𝙄𝙇 𝙋𝙍𝙄𝙔𝘼**[⚡🔥]({REBEL_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=True,
             )
@@ -98,12 +98,12 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.text=='':
             result = builder.article(
                 "@thanosBot_chat",
-                text=f"""**Hey![🤗]({REBEL_help_pic}) This is [thanosBot.](https://t.me/thanosBot_chat)\nYou can know more about me from the links given below 👇**""",
+                text=f"""**Hey![🤗]({REBEL_help_pic}) This is [𝘿3𝙑𝙄𝙇 𝙋𝙍𝙄𝙔𝘼.](https://t.me/Bustedmindss)\nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
-                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/thanos_userbot"),
+                        custom.Button.url("🔥 CHANNEL 🔥", "https://t.me/Bustedmind"),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/thanosBot_Chat"
+                            "⚡ GROUP ⚡", "https://t.me/Bustedmindss"
                         ),
                     ],
                     [
@@ -130,7 +130,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF ThanosBot[⚡🔥]({REBEL_help_pic})[.](https://t.me/ThanosBot_chat) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF 𝘿3𝙑𝙄𝙇 𝙋𝙍𝙄𝙔𝘼[⚡🔥]({REBEL_help_pic})[.](https://t.me/Bustedmindss) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=True,
         )
@@ -139,7 +139,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def on_plug_in_callback_query_handler(event):
         if event.query.user_id == bot.uid:
             await delete_REBEL(event,
-              f"⚜️ThanosBot Menu Provider Is now Closed[⚜️]({REBEL_help_pic})\n\n         **[© ThanosBot ™](t.me/ThanosBot_chat)**[⚡🔥]({REBEL_help_pic})", 5, link_preview=True
+              f"⚜️𝘿3𝙑𝙄𝙇 𝙋𝙍𝙄𝙔𝘼 Menu Provider Is now Closed[⚜️]({REBEL_help_pic})\n\n         **[© ThanosBot ™](t.me/ThanosBot_chat)**[⚡🔥]({REBEL_help_pic})", 5, link_preview=True
             )
         else:
             REBEL_alert = "HELLO THERE. PLEASE MAKE YOUR OWN ThanosBot AND USE. © ThanosBot ™"
