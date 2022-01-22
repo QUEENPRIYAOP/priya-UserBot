@@ -13,27 +13,27 @@ CUSTOM_ALIVE_TEXT = Config.ALIVE_MSG
 
 edit_time = 12
 """ =======================CONSTANTS====================== """
-file1 = "https://telegra.ph/file/c66fad876cf0926662463.jpg"
-file2 = "https://telegra.ph/file/63ccacdfe9e6cf2f31123.jpg"
-file3 = "https://telegra.ph/file/05e7453665d6028bfe450.jpg"
-file4 = "https://telegra.ph/file/e021b9b5ddb6fdecedc8e.jpg"
-file5 = "https://telegra.ph/file/c66fad876cf0926662463.jpg"
+file1 = "https://telegra.ph/file/5288e3a2cfd6a266ddf5a.jpg"
+file2 = "https://telegra.ph/file/2ebeb4cc0d1e397d5d982.jpg"
+file3 = "https://telegra.ph/file/04299b9368e72c039d99d.jpg"
+file4 = "https://telegra.ph/file/0b44d5ea0851371e2bbff.jpg"
+file5 = "https://telegra.ph/file/2ebeb4cc0d1e397d5d982.jpg"
 """ =======================CONSTANTS====================== """
 
-pm_caption = " **ＴＨΛＮ♢Ｓ ＩＳ ΛＬＩＶΣ**\n\n"
+pm_caption = " **𝘿3𝙑𝙄𝙇 𝙋𝙍𝙄𝙔𝘼 ＩＳ ΛＬＩＶΣ**\n\n"
 
 pm_caption = f"** {CUSTOM_ALIVE_TEXT}**\n"
 pm_caption += f"**╭────────────**\n"
-pm_caption += f"┣»»»『TԋαɳσʂႦσƚ』«««\n"
-pm_caption += f"┣TԋαɳσʂႦσƚ ~ {THANOSversion}\n"
-pm_caption += f"┣Tԋαɳσʂ  ~ [Owner](https://t.me/Mafiarishabh)\n"
-pm_caption += f"┣Support ~ [G𝖗ουρ](https://t.me/thanosbot_chats)\n"
-pm_caption += f"┣Řepô    ~ [Rєρο](https://github.com/thanosuser/ThanosBot)\n"
+pm_caption += f"┣»»»『𝘿3𝙑𝙄𝙇 𝙋𝙍𝙄𝙔𝘼』«««\n"
+pm_caption += f"┣𝙋𝙍𝙄𝙔𝘼 ~ {THANOSversion}\n"
+pm_caption += f"┣PRIYA  ~ [Owner](https://t.me/CUTIE_PRIYAOP1)\n"
+pm_caption += f"┣Support ~ [G𝖗ουρ](https://t.me/Bustedmindss)\n"
+pm_caption += f"┣Řepô    ~ [Rєρο](https://github.com/QUEENPRIYAOP/DEVILPRIYA)\n"
 pm_caption += f"**╰────────────**\n"
 
 
-@borg.on(admin_cmd(pattern=r"thanos"))
-@borg.on(sudo_cmd(pattern="thanos$", allow_sudo=True))
+@borg.on(admin_cmd(pattern=r"PRIYA"))
+@borg.on(sudo_cmd(pattern="PRIYA$", allow_sudo=True))
 async def amireallyalive(yes):
     await yes.get_chat()
 
