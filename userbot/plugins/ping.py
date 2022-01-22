@@ -22,10 +22,10 @@ async def _(event):
 ┗┛━━━━━┛┛┗┛━┓┃┛
 ━━━━━━━━━━━━┛┃━
 ━━━━━━━━━━━━━┛━
-__thanos-Bot__ is **ON!**ツ
+__𝘿3𝙑𝙄𝙇 𝙋𝙍𝙄𝙔𝘼__ is **ON!**ツ
 •My Master→ {DEFAULTUSER}
 ↓||•Ms•||↓
-Support :- @thanosBot_chat
+Support :- @Bustedmindss
 """
     st = time.time()
 
