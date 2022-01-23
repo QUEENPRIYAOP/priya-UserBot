@@ -9,7 +9,7 @@ import urllib
 
 import requests
 from telethon.tl import functions
-from REBELBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
+from THANOSBOT.utils import admin_cmd, sudo_cmd, edit_or_reply
 from userbot.cmdhelp import CmdHelp
 
 
