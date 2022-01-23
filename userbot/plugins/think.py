@@ -8,7 +8,7 @@ from telethon import events
 
 import asyncio
 
-from REBELBOT.utils import admin_cmd
+from THANOSBOT.utils import admin_cmd
 
 @borg.on(admin_cmd("think"))
 async def _(event):
