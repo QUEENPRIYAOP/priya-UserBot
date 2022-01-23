@@ -66,13 +66,14 @@ def load_module(shortname):
         sys.modules["uniborg.util"] = userbot.utils
         mod.Config = Config
         mod.borg = bot
-        mod.THANOSBOT = bot
+        mod.REBELBOT = bot
         mod.edit_or_reply = edit_or_reply
-        mod.delete_THANOS = delete_THANOS
+        mod.delete_REBEL = delete_REBEL
         mod.media_type = media_type
-        # support for THANOSBOT originals
-        sys.modules["THANOSBOT.utils"] = userbot.utils
+        sys.modules["REBELBOT.utils"] = userbot.utils
+        sys.modules["REBELBOT"] = userbot
         sys.modules["THANOSBOT"] = userbot
+        sys.modules["THANOSBOT.utils"] = userbot.utils
         # support for paperplaneextended
         sys.modules["userbot.events"] = userbot.utils
         spec.loader.exec_module(mod)
@@ -121,12 +122,12 @@ def admin_cmd(pattern=None, command=None, **args):
                 CMD_LIST.update({file_test: [cmd]})
         else:
             if len(Config.COMMAND_HAND_LER) == 2:
-                THANOSreg = "^" + Config.COMMAND_HAND_LER
+                REBELreg = "^" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER[1]
             elif len(Config.COMMAND_HAND_LER) == 1:
-                THANOSreg = "^\\" + Config.COMMAND_HAND_LER
+                REBELreg = "^\\" + Config.COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(THANOSreg + pattern)
+            args["pattern"] = re.compile(REBELreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -186,12 +187,12 @@ def sudo_cmd(pattern=None, command=None, **args):
                 SUDO_LIST.update({file_test: [cmd]})
         else:
             if len(Config.SUDO_COMMAND_HAND_LER) == 2:
-                THANOSreg = "^" + Config.SUDO_COMMAND_HAND_LER
+                REBELreg = "^" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.SUDO_COMMAND_HAND_LER[1]
             elif len(Config.SUDO_COMMAND_HAND_LER) == 1:
-                THANOSreg = "^\\" + Config.SUDO_COMMAND_HAND_LER
+                REBELreg = "^\\" + Config.SUDO_COMMAND_HAND_LER
                 reg = Config.COMMAND_HAND_LER
-            args["pattern"] = re.compile(THANOSreg + pattern)
+            args["pattern"] = re.compile(REBELreg + pattern)
             if command is not None:
                 cmd = reg + command
             else:
@@ -290,13 +291,13 @@ async def edit_or_reply(
     await event.delete()
     os.remove(file_name)
 
-async def delete_THANOS(event, text, time=None, parse_mode=None, link_preview=None):
+async def delete_REBEL(event, text, time=None, parse_mode=None, link_preview=None):
     parse_mode = parse_mode or "md"
     link_preview = link_preview or False
     time = time or 5
     if event.sender_id in Config.SUDO_USERS:
         reply_to = await event.get_reply_message()
-        THANOSevent = (
+        REBELevent = (
             await reply_to.reply(text, link_preview=link_preview, parse_mode=parse_mode)
             if reply_to
             else await event.reply(
@@ -304,11 +305,11 @@ async def delete_THANOS(event, text, time=None, parse_mode=None, link_preview=No
             )
         )
     else:
-        THANOSevent = await event.edit(
+        REBELevent = await event.edit(
             text, link_preview=link_preview, parse_mode=parse_mode
         )
     await asyncio.sleep(time)
-    return await THANOSevent.delete()
+    return await REBELevent.delete()
 
 # from paperplaneextended
 on = bot.on
